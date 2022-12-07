@@ -12,8 +12,6 @@ const Form = () => {
     setInput({ ...input, [name]: value });
   };
 
-  // const data = useSelector((state) => state.todos);
-
   const addTodoHandler = (e) => {
     e.preventDefault();
     //제목이나 내용이 빈 값일 경우 아무것도 리턴하지 않아요!

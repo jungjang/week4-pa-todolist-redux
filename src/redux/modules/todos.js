@@ -1,8 +1,10 @@
+//action value
 const ADD_TODO = "ADD_TODO";
 const DELETE_TODO = "DELETE_TODO";
 const EDIT_TODO = "EDIT_TODO";
 const DETAIL_TODO = "DETAIL_TODO";
 
+//action creator
 export const addTodo = (payload) => {
   return {
     type: ADD_TODO,
@@ -31,15 +33,9 @@ export const detailTodo = (payload) => {
   };
 };
 
-/*
-id :
-title : 
-content :
-isDone :
-*/
-
 //initialState
 const initialState = { todosList: [], detail: {} };
+
 //reducer
 const todos = (state = initialState, action) => {
   console.log(action.type);
@@ -77,5 +73,4 @@ const todos = (state = initialState, action) => {
       return state;
   }
 };
-//export
 export default todos;
