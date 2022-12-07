@@ -7,7 +7,6 @@ const Form = () => {
   const dispatch = useDispatch();
   const [input, setInput] = useState({ title: "", content: "" });
   const todos = useSelector((state) => state.todos.todosList);
-  console.log(todos);
   const onChangeHandler = (e) => {
     const { value, name } = e.target;
     setInput({ ...input, [name]: value });

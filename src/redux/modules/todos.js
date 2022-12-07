@@ -39,7 +39,7 @@ isDone :
 */
 
 //initialState
-const initialState = [{ todosList: [], detail: {} }];
+const initialState = { todosList: [], detail: {} };
 //reducer
 const todos = (state = initialState, action) => {
   console.log(action.type);
